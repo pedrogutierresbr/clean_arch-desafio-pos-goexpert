@@ -158,6 +158,7 @@ $ http://localhost:8080
 
 
 # Para criar uma ordem (substitua os valores)
+
 mutation createOrder{
     createOrder(input: {id: "xxxxxxx", Price: xxx.xx, Tax: x.x}) {
         id
@@ -169,6 +170,7 @@ mutation createOrder{
 
 
 # Para listar as ordens salvas no banco de dados
+
 query listOrders {
     listOrders {
         id
