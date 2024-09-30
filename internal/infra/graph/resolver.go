@@ -8,4 +8,5 @@ import "github.com/pedrogutierresbr/pos-goexpert/clean_arch-desafio-pos-goexpert
 
 type Resolver struct {
 	CreateOrderUseCase usecase.CreateOrderUseCase
+	ListOrdersUseCase  usecase.ListOrdersUseCase
 }
