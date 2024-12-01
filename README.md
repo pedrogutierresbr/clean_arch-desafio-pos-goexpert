@@ -70,25 +70,24 @@ $ git clone https://github.com/pedrogutierresbr/clean_arch-desafio-pos-goexpert.
 
 $ go mod tidy
 
-# 2 - Subir banco de dados (docker)
+# 2 - Subir containers
 
 $ docker-compose up -d
 
-# 3 - Configurar banco de dados
+ou 
 
-$ make migrate
+$ make up
 
-# 4 - Abrir outro terminal e navegar até a pasta com arquivo main.go
+# 3 - Subir o servidor
 
-$ cd cmd/ordersystem/
+$ cd cmd/ordersystem && go run main.go wire_gen.go
 
-# 5 - Rodar aplicação
+ou 
 
-$ go run main.go wire_gen.go
+$ make serve
 
 ```
 
-  
 
 #### Fazendo as requisição
 
@@ -99,7 +98,8 @@ Serviços estarão disponíveis nas seguintes portas:
 - gRPC: 50051
 
 - GraphQL: 8080
-  
+
+
 ##### Web Server
 ```bash
 # Abra a pasta API
