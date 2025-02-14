@@ -89,7 +89,7 @@ $ make serve
 ```
 
 
-#### Fazendo as requisição
+#### Fazendo a requisição
 
 Serviços estarão disponíveis nas seguintes portas:
 
